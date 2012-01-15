@@ -8,13 +8,13 @@
 Summary:	Version::Requirements - a set of version requirements for a CPAN dist
 Summary(pl.UTF-8):	Version::Requirements - zbiór wersjonowanych wymagań dla dystrybucji CPAN
 Name:		perl-Version-Requirements
-Version:	0.101020
+Version:	0.101021
 Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-authors/id/R/RJ/RJBS/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	e50725d564c0e287d54b08d4d809a26f
+# Source0-md5:	6defe4fc0a81179f564df3a790f136f5
 URL:		http://search.cpan.org/dist/Version-Requirements/
 BuildRequires:	perl-ExtUtils-MakeMaker >= 6.31
 BuildRequires:	perl-devel >= 1:5.8.0
