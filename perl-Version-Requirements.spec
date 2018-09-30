@@ -8,20 +8,20 @@
 Summary:	Version::Requirements - a set of version requirements for a CPAN dist
 Summary(pl.UTF-8):	Version::Requirements - zbiór wersjonowanych wymagań dla dystrybucji CPAN
 Name:		perl-Version-Requirements
-Version:	0.101022
+Version:	0.101023
 Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-authors/id/R/RJ/RJBS/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	74e8a660969e30ffbb64999806c0769c
+# Source0-md5:	0ceebafa26543bbe8cc9a035d0612cac
 URL:		http://search.cpan.org/dist/Version-Requirements/
 BuildRequires:	perl-ExtUtils-MakeMaker >= 6.31
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 %if %{with tests}
 BuildRequires:	perl-Scalar-List-Utils
-BuildRequires:	perl-Test-Simple >= 0.88
+BuildRequires:	perl-Test-Simple >= 0.96
 BuildRequires:	perl-version >= 0.77
 %endif
 BuildArch:	noarch
@@ -36,6 +36,8 @@ and it will reduce them to the simplest representation.
 Logically impossible constraints will be identified immediately by
 thrown exceptions.
 
+Note: this module is DEPRECATED, use CPAN::Meta::Requirements instead.
+
 %description -l pl.UTF-8
 Obiekt Version::Requirements modeluje zbiór wersjonowanych wymagań,
 jak te podawane w plikach META.yml lub META.json w dystrybucjach CPAN.
@@ -44,6 +46,9 @@ zredukuje je do najprostszej postaci.
 
 Logicznie wykluczające się ograniczenia są natychmiast zgłaszane przez
 rzucenie wyjątku.
+
+Uwaga: ten moduł jest PRZESTARZAŁY, zamiast niego lepiej używać
+CPAN::Meta::Requirements.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
