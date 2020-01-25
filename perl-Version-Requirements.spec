@@ -4,7 +4,6 @@
 #
 %define		pdir	Version
 %define		pnam	Requirements
-%include	/usr/lib/rpm/macros.perl
 Summary:	Version::Requirements - a set of version requirements for a CPAN dist
 Summary(pl.UTF-8):	Version::Requirements - zbiór wersjonowanych wymagań dla dystrybucji CPAN
 Name:		perl-Version-Requirements
